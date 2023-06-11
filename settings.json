@@ -6,7 +6,8 @@
         ".lq.NotifyPlayerLoadGameReady",
         ".lq.ActionPrototype",
         ".lq.Lobby.fetchGameRecordList",
-        ".lq.FastTest.syncGame"
+        ".lq.FastTest.syncGame",
+        ".lq.Lobby.login"
     ],
     "SEND_ACTION": [
         "ActionNewRound",
