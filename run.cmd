@@ -1,1 +1,1 @@
-mitmdump -p 23410 -s addons.py
+mitmdump -p 23410 -s addons.py --set validate_inbound_headers=false

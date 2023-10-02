@@ -41,7 +41,7 @@
 ### 使用方法
 1. 启动`mitmproxy`。
    - 直接运行`run.cmd`
-   - 或者打开命令行界面输入`mitmdump -p 23410 -s addons.py`。
+   - 或者打开命令行界面输入`mitmdump -p 23410 -s addons.py --set validate_inbound_headers=false`。
    - 这里的`23410`是本地端口，可以自行修改，下一步的端口也要同步修改。
    - `settings.json`文件中存储了小助手的地址，如有需要可以修改。
 2. 启动小助手，选择雀魂
@@ -58,7 +58,7 @@
    - 如果你正在使用代理，很可能是因为代理被覆盖而导致无法进入游戏，请看下一条。
 3. 代理被覆盖了，不能使用梯子了怎么办？
    - 使用[Clash](https://github.com/Fndroid/clash_for_windows_pkg)的TUN模式
-   - 或者在`mitmproxy`的启动参数中设置前置代理。例如，Clash默认端口为7890，则启动参数为：<br />`mitmdump -p 23410 -s addons.py --mode upstream:http://127.0.0.1:7890`
+   - 或者在`mitmproxy`的启动参数中设置前置代理。例如，Clash默认端口为7890，则启动参数为：<br />`mitmdump -p 23410 -s addons.py --mode upstream:http://127.0.0.1:7890 --set validate_inbound_headers=false`
 4. 看不懂怎么办？出现错误怎么解决？出现其它问题？
    - [提issue](https://github.com/Avenshy/mahjong-helper-majsoul-mitmproxy/issues)或者[加群](https://github.com/Avenshy/mahjong-helper-majsoul-mitmproxy#telegram%E9%A2%91%E9%81%93%E4%BA%A4%E6%B5%81%E7%BE%A4)！
 5. 为什么不使用selenium之类的浏览器自动化，省去配置浏览器的麻烦？
